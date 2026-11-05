@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="GlowCare: gentle, simple skincare essentials for your everyday glow.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9C%A8%3C/text%3E%3C/svg%3E">
+
+    <title>GlowCare | Gentle Skincare for Everyday Glow</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CSS-only cart: hidden checkboxes remember what is in the cart -->
+    <input type="checkbox" id="cart-open" class="cart-input" aria-label="Open cart">
+    <input type="checkbox" id="add1" class="cart-input" aria-label="Gentle Foaming Cleanser in cart">
+    <input type="checkbox" id="add2" class="cart-input" aria-label="Hydra Glow Serum in cart">
+    <input type="checkbox" id="add3" class="cart-input" aria-label="Daily Hydration Cream in cart">
+    <input type="checkbox" id="add4" class="cart-input" aria-label="Daily Shield SPF 50 in cart">
+
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <div class="logo">
+            Glow<span>Care</span>
+        </div>
+
+        <nav aria-label="Main">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#why-us">Why GlowCare</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <label for="cart-open" class="cart" role="button">
+            🛒 Cart <span class="cart-count"></span>
+        </label>
+
+    </header>
+
+
+    <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-heading">CLEAN • SIMPLE • GLOWING</p>
+
+            <h1>
+                Skincare made for
+                <span>your natural glow.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover gentle, effective skincare essentials designed
+                to keep your skin fresh, healthy and beautifully hydrated.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="btn primary-btn">
+                    Shop Now
+                </a>
+
+                <a href="#about" class="btn secondary-btn">
+                    Discover GlowCare
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-image" aria-hidden="true">
+
+            <div class="hero-circle"></div>
+
+            <div class="hero-product">
+                <div class="bottle">
+                    <div class="bottle-label">
+                        GlowCare
+                        <small>SKINCARE</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+
+        <div>
+            <strong>100%</strong>
+            <span>Skin Loving</span>
+        </div>
+
+        <div>
+            <strong>4.8/5</strong>
+            <span>Customer Rating</span>
+        </div>
+
+        <div>
+            <strong>10K+</strong>
+            <span>Happy Customers</span>
+        </div>
+
+        <div>
+            <strong>Gentle</strong>
+            <span>Everyday Care</span>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <div class="about-card">
+                <span>✦</span>
+                <h3>Simple skincare.</h3>
+                <p>
+                    Thoughtfully created for everyday routines.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-label">ABOUT GLOWCARE</p>
+
+            <h2>
+                Your skin deserves
+                <span>gentle care.</span>
+            </h2>
+
+            <p>
+                GlowCare brings together simple skincare essentials
+                made for modern everyday routines. From cleansing to
+                hydration and sun protection, every product is designed
+                to make skincare easy and enjoyable.
+            </p>
+
+            <p>
+                Whether you are starting your skincare journey or
+                refreshing your daily routine, GlowCare helps you
+                create a routine that feels simple and comfortable.
+            </p>
+
+            <a href="#products" class="text-link">
+                Explore our collection →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products">
+
+        <div class="section-heading">
+
+            <p class="section-label">OUR COLLECTION</p>
+
+            <h2>
+                Everyday essentials for
+                <span>healthy-looking skin.</span>
+            </h2>
+
+            <p>
+                Build your simple routine with our customer favourites.
+            </p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+
+                <div class="product-image cleanser">
+                    <span class="product-tag">BESTSELLER</span>
+
+                    <div aria-hidden="true" class="product-bottle">
+                        <div class="product-brand">
+                            GlowCare
+                            <small>GENTLE CLEANSER</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">CLEANSER</p>
+
+                    <h3>Gentle Foaming Cleanser</h3>
+
+                    <p class="description">
+                        A soft, refreshing cleanser for a clean
+                        and comfortable skin feel.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(128)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹499</strong>
+
+                        <label for="add1" class="add-btn"><span class="off">🛒 Add to Cart</span><span class="on">✓ Added</span></label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card">
+
+                <div class="product-image serum">
+
+                    <div aria-hidden="true" class="product-bottle serum-bottle">
+                        <div class="product-brand">
+                            GlowCare
+                            <small>HYDRATING SERUM</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">SERUM</p>
+
+                    <h3>Hydra Glow Serum</h3>
+
+                    <p class="description">
+                        A lightweight serum designed to give your
+                        skin a fresh and hydrated appearance.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(96)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹699</strong>
+
+                        <label for="add2" class="add-btn"><span class="off">🛒 Add to Cart</span><span class="on">✓ Added</span></label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card">
+
+                <div class="product-image moisturizer">
+
+                    <div aria-hidden="true" class="product-jar">
+
+                        <div class="jar-brand">
+                            GlowCare
+                            <small>DAILY MOISTURIZER</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">MOISTURIZER</p>
+
+                    <h3>Daily Hydration Cream</h3>
+
+                    <p class="description">
+                        A nourishing everyday moisturizer for
+                        soft and comfortable-looking skin.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(84)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹599</strong>
+
+                        <label for="add3" class="add-btn"><span class="off">🛒 Add to Cart</span><span class="on">✓ Added</span></label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+            <div class="product-card">
+
+                <div class="product-image sunscreen">
+
+                    <span class="product-tag sun-tag">
+                        DAILY ESSENTIAL
+                    </span>
+
+                    <div aria-hidden="true" class="product-bottle sunscreen-bottle">
+
+                        <div class="product-brand">
+                            GlowCare
+                            <small>SPF 50 SUNSCREEN</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">SUNSCREEN</p>
+
+                    <h3>Daily Shield SPF 50</h3>
+
+                    <p class="description">
+                        Lightweight daily sun protection with
+                        a comfortable, non-heavy finish.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                        <span>(152)</span>
+                    </div>
+
+                    <div class="product-bottom">
+
+                        <strong>₹749</strong>
+
+                        <label for="add4" class="add-btn"><span class="off">🛒 Add to Cart</span><span class="on">✓ Added</span></label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY GLOWCARE -->
+    <section class="why-us" id="why-us">
+
+        <div class="section-heading">
+
+            <p class="section-label">WHY GLOWCARE</p>
+
+            <h2>
+                Skincare without
+                <span>the complicated routine.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">🌿</div>
+
+                <h3>Gentle Care</h3>
+
+                <p>
+                    Everyday skincare designed with a
+                    simple and comfortable approach.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">💧</div>
+
+                <h3>Hydration First</h3>
+
+                <p>
+                    Products focused on keeping your
+                    daily routine fresh and hydrating.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">✨</div>
+
+                <h3>Simple Routine</h3>
+
+                <p>
+                    Easy-to-use essentials that fit
+                    naturally into your everyday routine.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🤍</div>
+
+                <h3>Made for Everyone</h3>
+
+                <p>
+                    A simple skincare collection suitable
+                    for different everyday routines.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <div>
+
+            <p class="section-label">
+                READY TO GLOW?
+            </p>
+
+            <h2>
+                Build your simple
+                skincare routine.
+            </h2>
+
+            <p>
+                Start with the essentials your skin will love.
+            </p>
+
+            <a href="#products" class="btn primary-btn">
+                Shop the Collection
+            </a>
+
+        </div>
+
+    </section>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    Glow<span>Care</span>
+                </div>
+
+                <p>
+                    Simple skincare for your everyday glow.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#why-us">Why GlowCare</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Contact</h4>
+
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="mailto:hello@glowcare.example">Email</a>
+                <a href="#">Customer Support</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 GlowCare. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+    <!-- CART PANEL -->
+    <label for="cart-open" class="cart-overlay" aria-hidden="true"></label>
+
+    <aside class="cart-panel" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <label for="cart-open" class="cart-close" role="button">✕ Close</label>
+        </div>
+
+        <p class="cart-empty">Your cart is empty. Tap Add to Cart on a product.</p>
+
+        <ul class="cart-list">
+            <li class="cart-item item1">
+                <span><strong>Gentle Foaming Cleanser</strong> ₹499</span>
+                <label for="add1" class="cart-remove">Remove</label>
+            </li>
+            <li class="cart-item item2">
+                <span><strong>Hydra Glow Serum</strong> ₹699</span>
+                <label for="add2" class="cart-remove">Remove</label>
+            </li>
+            <li class="cart-item item3">
+                <span><strong>Daily Hydration Cream</strong> ₹599</span>
+                <label for="add3" class="cart-remove">Remove</label>
+            </li>
+            <li class="cart-item item4">
+                <span><strong>Daily Shield SPF 50</strong> ₹749</span>
+                <label for="add4" class="cart-remove">Remove</label>
+            </li>
+        </ul>
+
+        <div class="cart-footer">
+            <div class="cart-total"><span>Total</span><strong class="cart-total-value"></strong></div>
+            <p class="cart-note">Demo store: checkout is not connected.</p>
+        </div>
+    </aside>
+
+</body>
+</html>
